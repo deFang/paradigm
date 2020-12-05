@@ -1,4 +1,5 @@
 import React from "react";
+import ReactGA from 'react-ga';
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // @material-ui/core components
@@ -27,9 +28,13 @@ import background from "assets/img/landing-bg.jpg";
 const dashboardRoutes = [];
 
 const useStyles = makeStyles(styles);
+const initGA = () => {
+    ReactGA.initialize('UA-184765568-1'); // put your tracking id here
+};
 
 export default function LandingPage(props) {
   const classes = useStyles();
+  const _ = initGA()
   const { ...rest } = props;
   return (
     //  <Helmet bodyAttributes={{style: 'background-color : #fff'}}></Helmet>
