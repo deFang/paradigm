@@ -1,7 +1,6 @@
 {
   "name": "para_website",
   "version": "0.1.0",
-  "homepage": "./",
   "private": true,
   "description": "Parapara aims to build most inclusive derivative DEX",
   "dependencies": {
